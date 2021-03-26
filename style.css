@@ -1,6 +1,9 @@
 * {
     box-sizing: border-box;
 }
+body{
+    margin: 0;
+}
 
 header{
     width: 100%;
@@ -97,4 +100,11 @@ header img {
     
     border-bottom: 3px solid peru;
    
+}
+.home h1{
+    text-align: center;
+}
+iframe{
+    background-color: whitesmoke;
+    border: 0;
 }
