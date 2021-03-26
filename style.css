@@ -3,17 +3,97 @@
 }
 
 header{
-    background-image: url(/images/ales-krivec-QnNqGoCnBg0-unsplash.jpg);
-    background-repeat: no-repeat;
+    width: 100%;
+    height: 10%;
+    position: relative;
+    
+}
+
+header::after{
+    content: "";
+    background: url(/images/ales-krivec-QnNqGoCnBg0-unsplash.jpg);
     background-size: cover;
     background-position: center;
+    opacity:0.9;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+
+iframe{
+    height: 100%;
     width: 100%;
-    height: 200px;
-    opacity: .8;
 }
 
 .logo{
+    position: relative;
     float: left;
-    height: 120px;
+    height: 150px;
+    border-radius: 50%;
+    
+}
 
+header h1 {
+    font-family: 'New Tegomin', serif;
+    color: white;
+    text-align: left;
+    font-size: 80px;
+    margin: 0;
+    height: 180px;
+    margin-left: 180px;
+}
+
+header img {
+    padding: 10px;
+}
+
+#navigation {
+    display: inline-block;
+    text-align: center; 
+    font-family: Risque;
+    background-color: burlywood;
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+}
+#navigation a {
+    display: inline-block;
+    padding: 15px 55px;
+    /* background-color: peru; */
+    color :saddlebrown;
+    text-align: center;
+    text-decoration: none;
+    transition-property: color, background-color;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+    
+}
+
+#navigation a:hover:not(.activePage){
+    background-color: peru;
+    color: white;
+    border-radius: 8px;
+    transform: scale(1.4);
+
+}
+/* #navigation a:first-child{
+    border-left: 1px solid black;
+   
+}
+#navigation a:last-child{
+    border-right: 1px solid black;
+} */
+
+#navigation .activePage{
+    background-color: white;
+    color: peru;
+    font-size: 1.8em;
+    border-radius: 8px 8px 0px 0px;
+    /* border: 1px solid #d7075a; */
+    border-bottom: 0;
+   
 }
