@@ -3,6 +3,15 @@
 }
 body{
     margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+footer {
+    background-color: black;
+    width: 100%;
+    height: 20%;
+    color: whitesmoke;
+    padding: 20px
 }
 
 header{
@@ -33,7 +42,7 @@ header::after{
 
 
 iframe{
-    min-height: 100vmax;
+    height: 100vh;
     width: 100%;
     background-color: whitesmoke;
     border: 0;
@@ -110,16 +119,18 @@ header img {
    
 }
 .welcome{
-    font-family: 'Ubuntu', sans-serif;
+    
     font-size: 1.5em;
     position: relative;
     color: black;
     background-color: burlywood;
-    left: 40px;
-    top: 40px;
+    left: 2.5%;
+    top: 6%;
     padding: 15px;
     width: fit-content;
-    border-radius: 15px;
+    border-radius: 15px 0 0 15px;
+    /* display: inline-block; */
+    margin-right: 90px;
 }
 
 .welcome p {
@@ -132,33 +143,57 @@ header img {
     margin: 10px 0 ;
 }
 
-.welcome button{
+/* .welcome button{
     text-align: center;
     float: center;
     background-color: black;
     color: white;
     padding: 10px;
     font-size: 0.8em;
+} */
+
+.featured-items{
+    display: inline-block;
+    position: relative;
+    bottom:20%;
+    left: 23%;
+    padding: 20px;
+    text-align: center;
+    width: 60%;
+    height: 80%;
+    
+    
+    
 }
+
+.featured-items::after{
+    content: "";
+    background-color: whitesmoke;
+    opacity:0.9;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
 
 .grid{
     display: grid;
-    /* width: 80%;
-    height: 80%; */
-    grid-template-columns: 420px 60%;
+    width: 80%;
+    /* height: fit-content;  */
+    grid-template:1fr 1fr/ repeat(3,1fr);
     margin: 0 auto;
-    gap: 10px;
-    justify-content: space-between;
+    gap: 80px 30px;
+    justify-content: space-around;
 }
 
 .gridItem{
-    /* display: inline-flex; */
-    width: 100%;
-    height: fit-content;
-}
-img.gridItem{
-    height: 40em;
-    width: 100%;
+    display: inline-flex;
+    flex-shrink: 1;
+    height: 120%;
+    width: 80%;
 }
 
 .home{
@@ -168,4 +203,5 @@ img.gridItem{
     max-width: 1920px;
     height: 650px;
     background-position: cover;
+    display: inline-block;
 }
