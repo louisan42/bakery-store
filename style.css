@@ -7,6 +7,9 @@ body{
 }
 
 footer {
+    display: grid;
+    grid-template-areas: "about-us image-references contact-us"
+                          "copyright copyright copyright";
     background-color: black;
     width: 100%;
     height: 20%;
@@ -14,6 +17,20 @@ footer {
     padding: 20px
 }
 
+.aboutUs{
+    grid-area: about-us;
+    border-right: 2px solid grey;
+    text-align: center;
+}
+.refernces{
+    grid-area: image-references;
+    border-right: 2px solid grey;
+    text-align: center;
+}
+.contact{
+    grid-area: contact-us;
+    border-right: 2px solid grey;
+}
 header{
     width: 100%;
     height: 10%;
@@ -183,17 +200,23 @@ header img {
     display: grid;
     width: 80%;
     /* height: fit-content;  */
-    grid-template:1fr 1fr/ repeat(3,1fr);
+    grid-template-columns: repeat(3,1fr);
     margin: 0 auto;
-    gap: 80px 30px;
+    gap:30px;
     justify-content: space-around;
 }
 
-.gridItem{
-    display: inline-flex;
-    flex-shrink: 1;
-    height: 120%;
-    width: 80%;
+.grid article{
+  height: 20em;
+  width: 20em;
+  border: 2px solid black;
+}
+
+article img{
+    /* display: inline-flex;
+    flex-shrink: 1; */
+    height: 80%;
+    width: 100%;
 }
 
 .home{
