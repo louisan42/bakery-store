@@ -33,7 +33,7 @@ header::after{
 
 
 iframe{
-    height: 100vmax;
+    min-height: 100vmax;
     width: 100%;
     background-color: whitesmoke;
     border: 0;
@@ -65,7 +65,7 @@ header img {
     display: inline-block;
     position: sticky;
     top: 0;
-    text-align: left; 
+    text-align: center; 
     font-family: Risque;
     background-color: burlywood;
     padding: 0;
@@ -110,6 +110,8 @@ header img {
    
 }
 .welcome{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.5em;
     position: relative;
     color: black;
     background-color: burlywood;
@@ -118,24 +120,41 @@ header img {
     padding: 15px;
     width: fit-content;
     border-radius: 15px;
+}
 
-    
+.welcome p {
+    font-size: medium;
+    padding-bottom: 17px;
+    border-bottom: 2px solid black;
+}
+
+.welcome h1 {
+    margin: 10px 0 ;
+}
+
+.welcome button{
+    text-align: center;
+    float: center;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font-size: 0.8em;
 }
 
 .grid{
     display: grid;
-    width: 80%;
-    height: 80%;
-    grid-template-columns: 1fr 1fr;
+    /* width: 80%;
+    height: 80%; */
+    grid-template-columns: 420px 60%;
     margin: 0 auto;
-    gap: 20px;
-    justify-content: space-around;
+    gap: 10px;
+    justify-content: space-between;
 }
 
 .gridItem{
-    display: inline-flex;
+    /* display: inline-flex; */
     width: 100%;
-    height: 100%;
+    height: fit-content;
 }
 img.gridItem{
     height: 40em;
