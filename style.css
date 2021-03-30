@@ -122,13 +122,10 @@ header img {
     /* transform: scale(1.4); */
 
 }
-/* #navigation a:first-child{
-    border-left: 1px solid black;
-   
-}
+
 #navigation a:last-child{
-    border-right: 1px solid black;
-} */
+    float: right;
+}
 
 #navigation .activePage{
     
@@ -170,9 +167,9 @@ header img {
 } */
 
 .featured-items{
-    display: inline-block;
+    display: inline-flex;
     position: relative;
-    bottom:20%;
+    top:4.95%;
     left: 23%;
     padding: 20px;
     text-align: center;
