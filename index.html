@@ -11,21 +11,22 @@
 
     <body>
         <header>
-            <img src="/images/bakery-shop-vintage-logo-template_142351-111.png" class="logo" alt="logo">
+            <img src="images/bakery-shop-vintage-logo-template_142351-111.png" class="logo" alt="logo">
             <h1>United Bakery</h1>
         </header>
         <nav id="navigation">
             <a class = 'activePage' href="pages/home.html" target="iframeMain"> Home </a>
             <a href="pages/products.html" target="iframeMain"> Products </a>
             <a href="pages/orderNow.html" target="iframeMain"> Order Now </a>
-            <a href="pages/orderNow.html" target="iframeMain"> Login </a>
+            <section class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Login</button>
+                <article id="myDropdown" class="dropdown-content">
+                  <a href="pages/empLogin.html" target="iframeMain">Employee Login</a>
+                  <a href="pages/custLogin.html" target="iframeMain">Customer Login</a>
+                </article>
+              </section>
+            
            
-            
-            
-            
-            
-            
-            
         </nav>
         <main>
             <article class="displayBox">
@@ -46,11 +47,24 @@
                     Landing page Photo by <a href="https://unsplash.com/@nickkarvounis?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Nick Karvounis</a>
                     on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a><br>
                     Bread Photo by <a href="https://unsplash.com/@jhaland?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jørgen Håland</a>
-                    on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                    on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a><br>
+                    Donuts Photo by <a href="https://unsplash.com/@rodlong?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Rod Long</a> on 
+                    <a href="https://unsplash.com/s/photos/bakery?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a><br>
+                    Biscuits Photo by <a href="https://unsplash.com/@georgegani?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">George Gkaniatsas</a> on 
+                    <a href="https://unsplash.com/s/photos/bakery?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a><br>
+                    Croissant Photo by <a href="https://unsplash.com/@sergich?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Sergio Arze</a> on 
+                    <a href="https://unsplash.com/s/photos/bakery?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a><br>
+                    Chocolate cake Photo by <a href="https://unsplash.com/@davidholifield?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">David Holifield</a> on 
+                    <a href="https://unsplash.com/s/photos/cakes?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a><br>
+                    Cupcakes Photo by <a href="https://unsplash.com/@jeremyliew?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jeremy Liew</a> on 
+                    <a href="https://unsplash.com/s/photos/cakes?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
+
                 </p>
 
                 
             </section>
         </footer>
+        <script src="javascript/script.js"></script>
     </body>
 </html>

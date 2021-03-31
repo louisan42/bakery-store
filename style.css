@@ -5,6 +5,9 @@ body{
     margin: 0;
     font-family: 'Ubuntu', sans-serif;
 }
+section h2{
+    text-align: center;
+}
 
 footer {
     display: grid;
@@ -41,11 +44,12 @@ header{
 h6{
     margin: 0;
     padding: 0;
+    height: 0;
 }
 
 header::after{
     content: "";
-    background: url(/images/ales-krivec-QnNqGoCnBg0-unsplash.jpg);
+    background: url(images/ales-krivec-QnNqGoCnBg0-unsplash.jpg);
     background-size: cover;
     background-position: center;
     opacity:0.9;
@@ -89,7 +93,7 @@ header img {
 
 #navigation {
     display: inline-block;
-    position: sticky;
+    
     top: 0;
     text-align: center; 
     font-family: Risque;
@@ -101,6 +105,7 @@ header img {
 }
 #navigation a{
     display: inline-block;
+    position: sticky;
     padding: 15px 45px;
     height: 100%;
     /* background-color: peru; */
@@ -123,10 +128,6 @@ header img {
 
 }
 
-#navigation a:last-child{
-    float: right;
-}
-
 #navigation .activePage{
     
     border-bottom: 3px solid peru;
@@ -138,13 +139,13 @@ header img {
     position: relative;
     color: black;
     background-color: burlywood;
-    left: 2.5%;
-    top: 6%;
+    left: 40px;
+    top: 20px;
     padding: 15px;
     width: fit-content;
     border-radius: 15px 0 0 15px;
     /* display: inline-block; */
-    margin-right: 90px;
+    /* margin: 30px 0 0 40px; */
 }
 
 .welcome p {
@@ -167,23 +168,22 @@ header img {
 } */
 
 .featured-items{
-    display: inline-flex;
+    /* display: inline-flex; */
     position: relative;
-    top:4.95%;
-    left: 23%;
+    top: -201px;
+    left: 437px;
     padding: 20px;
     text-align: center;
     width: 60%;
     height: 80%;
-    
-    
-    
+    /* margin: 0 auto; */
+        
 }
 
 .featured-items::after{
     content: "";
     background-color: whitesmoke;
-    opacity:0.9;
+    opacity:0.8;
     position: absolute;
     top: 0;
     left: 0;
@@ -204,15 +204,16 @@ header img {
 }
 
 .grid article{
-  height: 20em;
-  width: 20em;
+  height: auto;
+  width: 100%;
   border: 2px solid black;
+  
 }
 
 article img{
     /* display: inline-flex;
-    flex-shrink: 1; */
-    height: 80%;
+    flex-shrink: 0; */
+    height: auto;
     width: 100%;
 }
 
@@ -222,6 +223,132 @@ article img{
     width: 100%;
     max-width: 1920px;
     height: 650px;
-    background-position: cover;
-    display: inline-block;
+    display: inline;
 }
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 1024px) {
+    footer{
+        height: 80%;
+    }
+    body{
+        font-size: 14px;
+        width: 100%;
+    }
+    
+  .featured-items{
+      position: relative;
+      top: 50px;
+      left: 0px;
+      width: 100%;
+      border-radius: 15px;
+  }
+  .welcome{
+      margin-left: 10px;
+      border-radius: 15px;
+      font-size: x-small;
+  }
+ 
+
+
+}
+
+.dropbtn {
+    background-color: #3498DB;
+    color: whitesmoke;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+      
+    display: none;
+    position: absolute;
+    background-color: burlywood;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  #navigation .dropdown-content a {
+    text-align: left;  
+    color: saddlebrown;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  
+  .show {display: block;}
+  @media screen and (max-width: 800px) {
+    body{
+        font-size: 14px;
+        width: 100%;
+    }
+    
+    .featured-items{
+        position: relative;
+        top: 20px;
+        left: 0px;
+        width: 100%;
+        border-radius: 15px;
+    }
+    .welcome{
+        margin: 10px auto;
+        border-radius: 15px;
+        font-size: x-small;
+    }
+   
+
+
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+   
+    .grid {
+        display: grid;
+        grid-template-columns: auto;
+        position: relative;
+        left: 10px;
+        font-size: x-small;
+      }
+      .welcome{
+          position: static;
+          margin: 5 auto;
+          border-radius: 15px;
+          font-size: x-small;
+      }
+      header h1{
+          visibility: hidden;
+      }
+      .logo{
+          margin-left: 31%;
+      }
+      footer{
+          font-size: x-small;
+      }
+      #navigation a {
+          display: none;
+          position: static;
+      }
+  }
